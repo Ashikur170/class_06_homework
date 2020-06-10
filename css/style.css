@@ -1,0 +1,61 @@
+.note_title{
+	text-align: center;
+}
+.example{
+	background-color: #f1f1f1;
+	color: green;
+}
+.box_model{
+	text-align: center;
+}
+.box_model div{
+	display: inline-block;
+	text-align: left;
+	font-size: 16px;
+}
+.div1{
+	border: 5px solid red;
+}
+.div2{
+	padding: 10px;
+	border: 2px dotted red;
+}
+.div3{
+	margin: 10px 20px;
+	border: 2px dashed green;
+}
+.div4{
+	margin: 8px 5px 10px;
+	padding: 8px 5px 10px;
+	border: 5px ridge red;
+}
+.div5{
+	margin: 15px;
+	border-top: 2px solid red;
+	border-right: 5px dashed magenta;
+	border-bottom: 10px double cyan;
+	border-left: 2px dotted blue;
+	padding: 10px;
+}
+.div6{
+	border: 5px solid red;
+}
+.element_practice{
+	font-family: consolas;
+	font-size: 16px;
+	font-weight: bold;
+	color: #e74c3c;
+}
+.table, .table tr, .table th, .table td{
+	border: 1px solid #aaa999;
+}
+.table th, .table td{
+	padding: 5px 10px;
+}
+.table tr td:first-child {
+  text-align: center;
+}
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

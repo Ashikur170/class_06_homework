@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class-06 | Homework</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="class_note">
+		<h1 class="note_title">Class Notes & Practice</h1>
+		<h3>Contents</h3>
+		<ol>
+			<li><b>Block, Inline, Inline-block elements</b>
+				<ul>
+					<li>
+						<b>Block Elements</b> => the elements who cover full width available and no elements can sit beside<pre class="example">&#60;address&#62;  &#60;article&#62;  &#60;aside&#62;  &#60;blockquote&#62;  &#60;canvas&#62;  &#60;dd&#62;  &#60;div&#62;  &#60;dl&#62;  &#60;dt&#62;  &#60;fieldset&#62;  &#60;figcaption&#62;  &#60;figure&#62;  &#60;footer&#62;  &#60;form&#62;  &#60;h1&#62;....&#60;h6&#62;  &#60;header&#62;  &#60;hr&#62;  &#60;li&#62;  &#60;main&#62;
+&#60;nav&#62;  &#60;noscript&#62;  &#60;ol&#62;  &#60;p&#62;  &#60;pre&#62;  &#60;section&#62;  &#60;table&#62;  &#60;tfoot&#62;</pre>
+<p>CSS Style:</p><pre>
+display: block;
+</pre>
+					</li>
+					<br>
+					<li>
+						<b>Inline Elements</b> => the elements cover only necessary width and other inline elements can sit beside<pre class="example">&#60;a&#62;  &#60;abbr&#62;  &#60;acronym&#62;  &#60;b&#62;  &#60;bdo&#62;  &#60;big&#62;  &#60;br&#62;  &#60;button&#62;  &#60;cite&#62;  &#60;code&#62;  &#60;dfn&#62;  &#60;em&#62;  &#60;i&#62;  &#60;img&#62;  &#60;input&#62;  &#60;kbd&#62;  &#60;label&#62;  &#60;map&#62;  &#60;object&#62;  &#60;output&#62;  &#60;q&#62;  &#60;samp&#62;  &#60;script&#62;
+&#60;select&#62;  &#60;small&#62;  &#60;span&#62;  &#60;strong&#62;  &#60;sub&#62;  &#60;sup&#62;  &#60;textarea&#62;  &#60;time&#62;  &#60;tt&#62;  &#60;var&#62;</pre>
+<p>CSS Style:</p><pre>
+display: inline;
+</pre>
+				</li>
+				<li><b>Inline-block</b> i.e. <code>display: inline-block;</code> is not assigned to any elements. We can use this on our needs. So, that element will treat like both inline and block style i.e. takes necessary width but height will be block.</li>
+				</ul>
+			</li>
+			<br>
+			<li>
+				<b>CSS Box Model</b>
+				<br><br>
+				<img src="images/box_model.png" alt="CSS Box Model" title="CSS Box Model">
+				<br>
+				<div class="box_model">
+					<div class="div1"><code>border: 5px solid red;</code></div>
+					<div class="div2"><code>padding: 10px;<br>border: 2px dotted red;</code></div>
+					<div class="div3"><code>margin: 10px 20px;<br>border: 2px dashed green;</code></div>
+					<div class="div4"><code>margin: 8px 5px 10px;<br>padding: 8px 5px 10px;<br>border: 5px ridge red;</code></div>
+					<div class="div5"><code>margin: 15px;<br>border-top: 2px solid red;<br>border-right: 5px dashed magenta;<br>border-bottom: 10px double cyan;<br>border-left: 2px dotted blue;<br>padding: 10px;</code></div>
+				</div>
+			</li>
+			<li>
+				<b>HTML Element Practice</b>
+				<ul>
+					<li>
+						<span class="element_practice">&#60;dl&#62; &#60;dt&#62; &#60;dd&#62;</span>
+						<dl>
+							<dt>Food</dt>
+								<dd>Rice</dd><dd>Bread</dd><dd>Fruits</dd>
+							<dt>Dress</dt>
+								<dd>Shirt</dd><dd>Suits</dd>
+							<dt>Vehicles</dt>
+								<dd>Bike</dd><dd>Car</dd><dd>Bus</dd><dd>Train</dd>
+						</dl>
+					</li>
+					<br>
+					<li>
+						<span class="element_practice">&#60;audio&#62; &#60;video&#62; &#60;picture&#62; &#60;source&#62;</span>
+						<br><br>
+						<audio controls>
+							<source src="media/nokia.mp3" type="audio/mpeg">
+						</audio>
+						<br>
+						<video controls width="800">
+							<source src="media/rabbit.mp4" type="video/mp4">
+						</video>
+						<br>
+						<picture>
+							<source media="(min-width: 100px)" srcset="images/orange.jpg"> 
+							<img src="images/box_model.png" alt="">
+						</picture>
+					</li>
+					<br>
+					<li>
+						<span class="element_practice">&#60;ul&#62; &#60;ol&#62; &#60;li&#62;</span>
+						
+						<h4>Here is an ordered list.</h4>
+						<ol>
+							<li>Dhaka</li>
+							<li>Khulna</li>
+							<li>Chittagong</li>
+							<li>Rajshahi</li>
+						</ol>
+						<h4>Here is an unordered list.</h4>
+						<ul>
+							<li>Khilgaon</li>
+							<li>Badda</li>
+							<li>Uttara</li>
+							<li>Motijheel</li>
+							<li>Mohammadpur</li>
+							<li>Saidabad</li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						<span class="element_practice">&#60;progress&#62;</span>
+						<br><label for="progress">Progess: 45%</label>
+						<progress id="progress" value="45" max="100">45%</progress>
+						<br><label for="no_progress">Progress: blank</label>
+						<progress id="no_progress"></progress>
+					</li>
+					<br>
+					<li>
+						<span class="element_practice">&#60;output&#62;</span>
+						<br>
+						<form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+						  <input type="number" id="a" value="2">
+						  x <input type="number" id="b" value="5">
+						  =<output name="x" for="a b"></output>
+						</form>
+					</li>
+					<br>
+					<li>
+						<span class="element_practice">&#60;sub&#62; &#60;sup&#62; &#60;var&#62;</span>
+						<br>
+						<span><var>a</var><sup>2</sup>+<var>b</var><sup>2</sup>=<var>c</var><sup>2</sup></span>
+						<br>
+						<span><var>A</var><sub>1</sub><var>A</var><sub>2</sub>=<var>B</var><sup>2</sup></span>
+					</li>
+					<br>
+					<li>
+						<span class="element_practice">&#60;ruby&#62; &#60;rt&#62; &#60;rp&#62;</span>
+						<br>
+						<ruby>
+							你好<rt>Nǐ hǎo</rt><rp>Ni hao</rp>
+						</ruby>
+					</li>
+					<br>
+					<li>
+						<span class="element_practice">&#60;table&#62; &#60;tr&#62; &#60;th&#62; &#60;td&#62; &#60;caption&#62;</span>
+						<br>
+						<table class="table">
+							<caption>----CEO Salary----</caption>
+							<tr>
+								<th>No.</th><th>Full Name</th><th>Position</th><th>Salary</th><th>Type</th>
+							</tr>
+							<tr>
+								<td>1</td><td>Bill Gates</td><td>Founder Microsoft</td><td>$1000</td><td rowspan="4">Company Founder</td>
+							</tr>
+							<tr>
+								<td>2</td><td>Steve Jobs</td><td>Founder Apple</td><td>$1200</td>
+							</tr>
+							<tr>
+								<td>3</td><td>Larry Page</td><td>Founder Google</td><td>$1100</td>
+							</tr>
+							<tr>
+								<td>4</td><td>Mark Zukerberg</td><td>Founder Facebook</td><td>$1300</td>
+							</tr>
+							<tr>
+								<td colspan="3">Total Amount:</td><td>$4600</td>
+							</tr>
+						</table>
+						<br>
+						<a href="https://morioh.com/p/6821c32ec50a" target="_blank">For details on tables.... check out this link</a>
+					</li>
+					<br>
+					<li>
+						<span class="element_practice">&#60;form&#62; &#60;fieldset&#62; &#60;legend&#62; &#60;label&#62; &#60;input&#62; &#60;select&#62; &#60;optgroup&#62; &#60;option&#62;</span>
+						<br>
+						<form action="#" method="get">
+							<fieldset>
+								<legend>Student Info</legend>
+								<label for="name">Full Name</label>
+								<input type="text" name="name" id="name"><br><br>
+								<label for="roll">Roll No.</label>
+								<input type="text" name="roll" id="roll"><br><br>
+								<label for="dept">Department</label>
+								<select name="dept" id="dept">
+									<optgroup label="EEE Faculty">
+										<option value="1">EEE</option>
+										<option value="2">CSE</option>
+										<option value="3">ECE</option>
+										<option value="4">BME</option>
+										<option value="5">MSE</option>
+										<option value="7">BME</option>
+									</optgroup>
+									<optgroup label="CE Faculty">
+										<option value="8">CE</option>
+										<option value="9">URP</option>
+										<option value="10">BECM</option>
+										<option value="11">ARCH</option>
+										<option value="12">MATH</option>
+										<option value="13">CH</option>
+										<option value="14">PH</option>
+										<option value="15">HUM</option>
+									</optgroup>
+									<optgroup label="ME Faculty">
+										<option value="16">ME</option>
+										<option value="17">IEM</option>
+										<option value="18">LE</option>
+										<option value="19">TE</option>
+										<option value="20">ESE</option>
+									</optgroup>
+								</select><br><br>
+								<label for="photo">Photo</label>
+								<input type="file" name="photo"><br><br>
+								<label for="about">Bio</label>
+								<textarea name="about" id="about" cols="30" rows="10"></textarea><br><br>
+								<label>Gender</label>
+								<input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+								<input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label><br><br>
+								<input type="submit" value="Submit">
+								<input type="reset" value="Reset">
+							</fieldset>
+						</form>
+					</li>
+				</ul>
+			</li>
+		</ol>
+	</section>
+</body>
+</html>
